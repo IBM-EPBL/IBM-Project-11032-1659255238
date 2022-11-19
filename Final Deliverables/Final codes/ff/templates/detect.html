@@ -1,0 +1,80 @@
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css">
+        <title>
+            Page of DetecT
+        </title>
+        <style>
+            
+            #bg 
+{
+background-image: url('static/img/p1.jpg');
+position: fixed;
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+background-size: cover;
+filter: blur(0px);
+}
+
+#myButton1{
+    letter-spacing: 1px;
+
+}
+#myButton11{
+    letter-spacing: 1px;
+    left: -30px;
+
+}
+</style>
+<script>
+    function clearFunc()
+{
+    document.getElementById("wave").value="";
+        }
+        function Func()
+        {
+            alert(" The Area'are under in Fire zone ");
+
+        }
+
+        function lFunc()
+        {
+            alert(" The Area'are not under in Fire zone ");
+
+        }
+
+        </script>
+    </head>
+    <body id="bg">  
+        <div class="container">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <center><form>
+                <div class="form-group col-md-3"> 
+                    <label><b>Upload The Wave Image</b></label><br>
+                    <br>
+                    <input type="file" class="form-control-file" id="wave" name="wave"></div>
+    
+                <div class="form-row">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <div class="btn-group" id="ao"><button id="myButton1" class="btn btn-primary" type="submit" onclick="lFunc()"> ---</button>
+                <button id="myButton11"class="btn btn-primary" type="reset" onclick="Func()"> to Submit ---</button></div>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                    <div><button class="btn btn-primary" type="reset" onclick="clearFunc()">Reset</button></div>
+                </div>
+            </form></center>
+        </div>
+    </body>
